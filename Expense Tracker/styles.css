@@ -1,0 +1,114 @@
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #9370DB; /* Dark purple text color */
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    max-width: 1200px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.left-side, .right-side {
+    flex: 1;
+    margin: 10px;
+}
+
+h1 {
+    text-align: center;
+    color: #9370DB; /* Dark purple for headings */
+}
+
+/* Form styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form input[type="text"],
+form input[type="number"],
+form input[type="date"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #333; /* Default text color */
+}
+
+form button {
+    background-color: #9370DB; /* Light purple color */
+    color: #fff; /* White text color */
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+form button:hover {
+    background-color: #7B68EE; /* Darker shade of purple on hover */
+}
+
+/* Expenses list styles */
+#expenses {
+    list-style-type: none;
+    padding: 0;
+}
+
+#expenses li {
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: #333; /* Default text color */
+}
+
+#expenses li span {
+    display: block;
+    margin-bottom: 5px;
+    color: #333; /* Default text color */
+}
+
+#expenses li .delete-btn {
+    background-color: #dc3545; /* Red delete button */
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#expenses li .delete-btn:hover {
+    background-color: #c82333; /* Darker shade of red on hover */
+}
+
+/* Chart container styles */
+.chart-container {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    color: #333; /* Default text color */
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        width: 90%;
+    }
+}
